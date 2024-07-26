@@ -1,0 +1,111 @@
+
+body{
+background-color: darkgray;
+}
+#gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "title title"
+                         "nav   content";
+                         grid-gap: 8px;
+}
+#title{
+    grid-area: title;
+    background-color: #333;
+    color: white;
+    border: 5px solid white;
+   
+}
+#title h1{
+    margin-left: 1em;
+}
+nav{
+    grid-area: nav;
+    background-color: #333;
+    border: 5px solid white;   
+}
+nav ul{
+    position: sticky;
+    top: 1em;
+}
+
+nav a:link{
+    color: white;
+}
+#content{
+    grid-area: content;
+}
+#flexcontainer{
+    display: flex;
+    flex-flow: column;
+}
+ul{
+    color: white;
+}
+li{
+    font-size: large;
+    text-decoration: none;
+}
+.contentitem h2{
+    margin-left: 1em;
+}
+.contentitem p{
+    margin-left: 1em;
+    font-size: large;
+}
+.contentitem img{
+    max-height: 326px;
+    width: auto;
+    float: right;
+}
+
+#aboutme, #piecedtogether, #shapedefense{
+    background-color: white;
+    color: black;
+}
+
+#aboutme a:link, #piecedtogether a:link, #shapedefense a:link{
+    color: black;
+}
+
+#boxadventures, #livewire{
+    background-color: #333;
+    color: white;
+}
+
+#boxadventures a:link, #livewire a:link{
+    color: white;
+}
+
+a:visited{
+color: rgb(128, 128, 128);
+}
+a:focus, a:hover{
+background-color: darkgray;
+}
+a:active{
+background-color: lightgray;
+}
+@media screen and (max-width: 750px) {
+    #gridcontainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr auto;
+        grid-template-areas: "title"
+                             "nav"
+                             "content";
+    }
+    #title h1{
+        text-align: center;
+        margin-left: 0;
+    }
+    nav{
+        position: sticky;
+        top: -5px;
+    }
+    .contentitem img{
+        display: block;
+        margin: 1em auto 0 auto;
+        float: none;
+    }
+}
