@@ -8,7 +8,8 @@ background-color: darkgray;
     grid-template-rows: 1fr auto;
     grid-template-areas: "title title"
                          "nav   content";
-                         grid-gap: 8px;
+    grid-gap: 8px;
+    justify-items: stretch;
 }
 #title{
     grid-area: title;
@@ -18,7 +19,10 @@ background-color: darkgray;
    
 }
 #title h1{
-    margin-left: 1em;
+    margin-left: 2rem;
+}
+#title h3{
+    margin-left: 2rem;
 }
 nav{
     grid-area: nav;
@@ -36,6 +40,7 @@ nav a:link{
 #content{
     grid-area: content;
 }
+
 #flexcontainer{
     display: flex;
     flex-flow: column;
@@ -47,10 +52,10 @@ li{
     font-size: large;
     text-decoration: none;
 }
-.contentitem h2{
+.contentitem h2, #aboutme h2{
     margin-left: 1em;
 }
-.contentitem p{
+.contentitem p, #aboutme p{
     margin-left: 1em;
     font-size: large;
 }
@@ -60,21 +65,21 @@ li{
     float: right;
 }
 
-#aboutme, #piecedtogether, #shapedefense{
+ #piecedtogether, #shapedefense{
     background-color: white;
     color: black;
 }
 
-#aboutme a:link, #piecedtogether a:link, #shapedefense a:link{
+ #piecedtogether a:link, #shapedefense a:link{
     color: black;
 }
 
-#boxadventures, #livewire{
+#aboutme, #boxadventures, #livewire, #deadelements {
     background-color: #333;
     color: white;
 }
 
-#boxadventures a:link, #livewire a:link{
+#aboutme a:link, #boxadventures a:link, #livewire a:link{
     color: white;
 }
 
