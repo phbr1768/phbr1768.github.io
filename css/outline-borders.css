@@ -1,0 +1,13 @@
+* {
+    border: 1px solid black;
+}
+
+#projects{
+    display: flex;
+    flex-flow: row wrap;   
+}
+
+#projects > div{
+    flex-grow: 1;
+}
+
