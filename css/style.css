@@ -79,12 +79,12 @@ li{
     color: white;
 }
 
-#aboutme a:link, #boxadventures a:link, #livewire a:link{
+#aboutme a:link, #boxadventures a:link, #livewire a:link, #deadelemets a:link{
     color: white;
 }
 
 a:visited{
-color: rgb(128, 128, 128);
+color: rgb(100, 100, 100);
 }
 a:focus, a:hover{
 background-color: darkgray;
