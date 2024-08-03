@@ -90,14 +90,19 @@ li{
 }
 
 a:visited{
-color: rgb(100, 100, 100);
+    color: rgb(100, 100, 100);
 }
 a:focus, a:hover{
-background-color: darkgray;
+    background-color: darkgray;
 }
 a:active{
-background-color: lightgray;
+    background-color: lightgray;
 }
+summary {
+    cursor: pointer;
+}
+
+
 @media screen and (max-width: 750px) {
     #gridcontainer{
         grid-template-columns: 1fr;
